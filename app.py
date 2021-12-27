@@ -12,7 +12,7 @@ def index():
 def truth():
 	if (request.form['name_input']=="truth"):
 		flash("cobalah jujur")
-	return render_template("index.html")
+		return render_template("index.html")
 
 @app.route("/dare", methods=['POST', 'GET'])
 def dare():
