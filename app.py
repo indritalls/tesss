@@ -14,8 +14,6 @@ def truth():
 		flash("cobalah jujur")
 		return render_template("index.html")
 
-@app.route("/mulai", methods=['POST', 'GET'])
-def dare():
 	if (request.form['name_input']=="dare"):
 		flash("beranilah menerima tantangan ini")
 		return render_template("index.html")
