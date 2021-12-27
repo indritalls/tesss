@@ -17,5 +17,5 @@ def truth():
 @app.route("/mulai", methods=['POST', 'GET'])
 def dare():
 	if (request.form['name_input']=="dare"):
-		print("beranilah menerima tantangan ini")
+		flash("beranilah menerima tantangan ini")
 		return render_template("index.html")
