@@ -9,6 +9,6 @@ def index():
 	return render_template("index.html")
 
 @app.route("/mulai", methods=['POST', 'GET'])
-def greeter():
-	flash("Hi " + str(request.form['name_input']) + ", great to see you!")
+def truth():
+	flash("cobalah untuk jujur")
 	return render_template("index.html")
