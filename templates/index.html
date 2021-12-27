@@ -2,20 +2,20 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Say Hello</title>
+    <title>Games Truth or Dare</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
 </head>
 <body>
-    <img src="https://raw.githubusercontent.com/MariyaSha/SimpleGreetingApp/main/logo.png">
+    <img src="https://i.pinimg.com/736x/b9/1c/d4/b91cd46867d276c051cdaa93ba59f0ca.jpg">
     <br>
-    <form action="greet" method="post">
+    <form action="mulai" method="post">
         {% for message in get_flashed_messages() %}
              <p>{{ message }}</p>
          {% endfor %}
         <br>
         <input type="text" name="name_input">
         <br>
-        <input type="submit" value="GREET" id="greet">
+        <input type="submit" value="MULAI" id="mulai">
     </form>
 </body>
 </html>
