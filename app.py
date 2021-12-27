@@ -11,11 +11,11 @@ def index():
 @app.route("/truth", methods=['POST', 'GET'])
 def truth():
 	if (request.form['name_input']=="truth"):
-		flash("cobalah jujur")
+		print("cobalah jujur")
 	return render_template("index.html")
 
 @app.route("/dare", methods=['POST', 'GET'])
 def dare():
 	if (request.form['name_input']=="dare"):
-		flash("beranilah menerima tantangan ini")
+		print("beranilah menerima tantangan ini")
 	return render_template("index.html")
