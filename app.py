@@ -8,7 +8,7 @@ def index():
 	flash("what's your name?")
 	return render_template("index.html")
 
-@app.route("/truth", methods=['POST', 'GET'])
+@app.route("/mulai", methods=['POST', 'GET'])
 def truth():
 	if (request.form['name_input']=="truth"):
 		print("cobalah jujur")
