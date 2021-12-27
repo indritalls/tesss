@@ -12,3 +12,7 @@ def index():
 def truth():
 	flash("cobalah untuk jujur")
 	return render_template("index.html")
+
+def dare():
+	flash("siap-siap untuk menerima tantangan")
+	return render_template("index.html")
