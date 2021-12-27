@@ -11,7 +11,7 @@ def index():
 @app.route("/mulai", methods=['POST', 'GET'])
 def truth():
 	if (request.form['name_input']=="truth"):
-		print("cobalah jujur")
+		flash("cobalah jujur")
 	return render_template("index.html")
 
 @app.route("/dare", methods=['POST', 'GET'])
