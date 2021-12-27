@@ -8,7 +8,7 @@ def index():
 	flash("what's your name?")
 	return render_template("index.html")
 
-@app.route("/greet", methods=['POST', 'GET'])
+@app.route("/mulai", methods=['POST', 'GET'])
 def greeter():
 	flash("Hi " + str(request.form['name_input']) + ", great to see you!")
 	return render_template("index.html")
