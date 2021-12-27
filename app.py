@@ -3,16 +3,13 @@ from flask import Flask, render_template, request, flash
 app = Flask(__name__)
 app.secret_key = "manbearpig_MUDMAN888"
 
-@app.route("/hello")
+@app.route("/tes")
 def index():
-	flash("Pilihlah Truth or Dare")
+	flash("Ketikkan truth atau dare")
 	return render_template("index.html")
 
-@app.route("/mulai", methods=['POST', 'GET'])
-def truth():
-	flash("cobalah untuk jujur")
-	return render_template("index.html")
-
-def dare():
-	flash("siap-siap untuk menerima tantangan")
-	return render_template("index.html")
+@app.route("/truth", methods=['POST', 'GET'])
+def handle_message(message):
+	if (message=="truth"):
+		flash("Coba jujur")
+		return render_template("index.html")
